@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedigree Editor</title>
+    <script type="module" src="/src/main.js"></script>
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <div class="header-content">
+          <h1>Pedigree Editor</h1>
+          <div class="file-menu">
+            <button class="btn" id="importBtn">Import</button>
+            <button class="btn" id="exportImageBtn">Export Image</button>
+            <button class="btn" id="exportDataBtn">Export Data</button>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="toolbar">
+          <div class="mode-buttons">
+            <button class="btn mode-btn active" data-mode="draw">Draw</button>
+            <button class="btn mode-btn" data-mode="connect">Connect</button>
+          </div>
+          <div class="symbol-buttons">
+            <button class="btn symbol-btn active" data-symbol="male">□</button>
+            <button class="btn symbol-btn" data-symbol="female">○</button>
+            <button class="btn symbol-btn" data-symbol="unknown">◇</button>
+          </div>
+        </div>
+        <div class="canvas-container">
+          <canvas id="pedigreeCanvas"></canvas>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
